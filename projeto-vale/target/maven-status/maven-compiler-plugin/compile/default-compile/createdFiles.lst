@@ -1,0 +1,16 @@
+com\projetovale\controller\LancamentoController.class
+com\projetovale\service\LancamentoService.class
+com\projetovale\controller\SolicitanteController.class
+com\projetovale\ProjetoValeApplication.class
+com\projetovale\exception\GlobalExceptionHandler.class
+com\projetovale\model\Lancamento.class
+com\projetovale\repository\LancamentoRepository.class
+com\projetovale\repository\UsuarioRepository.class
+com\projetovale\service\SolicitanteService.class
+com\projetovale\service\UsuarioService.class
+com\projetovale\config\SecurityConfig.class
+com\projetovale\model\Solicitante.class
+com\projetovale\repository\SolicitanteRepository.class
+com\projetovale\model\Usuario.class
+com\projetovale\controller\UsuarioController.class
+com\projetovale\controller\HomeController.class
