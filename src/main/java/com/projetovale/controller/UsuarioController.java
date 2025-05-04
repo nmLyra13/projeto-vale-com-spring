@@ -25,14 +25,14 @@ public class UsuarioController {
 		this.usuarioService = usuarioService;
 	}
 
-	// ✅ Criar um novo usuário (POST)
+	// Criar um novo usuário (POST)
 	@PostMapping
 	public ResponseEntity<Usuario> criarUsuario(@RequestBody Usuario usuario) {
 		Usuario novoUsuario = usuarioService.salvar(usuario);
 		return ResponseEntity.status(HttpStatus.CREATED).body(novoUsuario);
 	}
 
-	// ✅ Listar todos os usuários (GET)
+	// Listar todos os usuários (GET)
 	@GetMapping
 	public ResponseEntity<List<Usuario>> listarUsuarios() {
 		List<Usuario> usuarios = usuarioService.listarTodos();

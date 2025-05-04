@@ -12,5 +12,4 @@ public class HomeController {
 	public String home() {
 		return "API do Projeto Vale está rodando!";
 	}
-
 }

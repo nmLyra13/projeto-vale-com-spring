@@ -23,31 +23,31 @@ public class LancamentoController {
 	@Autowired
 	private LancamentoService lancamentoService;
 
-	// ✅ Listar todos os lançamentos
+	// Listar todos os lançamentos
 	@GetMapping
 	public List<Lancamento> listarTodos() {
 		return lancamentoService.listarTodos();
 	}
 
-	// ✅ Buscar lançamento por ID
+	// Buscar lançamento por ID
 	@GetMapping("/{id}")
 	public Optional<Lancamento> buscarPorId(@PathVariable Long id) {
 		return lancamentoService.buscarPorId(id);
 	}
 
-	// ✅ Criar novo lançamento
+	// Criar novo lançamento
 	@PostMapping
 	public Lancamento salvar(@RequestBody Lancamento lancamento) {
 		return lancamentoService.salvar(lancamento);
 	}
 
-	// ✅ Atualizar um lançamento existente
+	// Atualizar um lançamento existente
 	@PutMapping("/{id}")
 	public Lancamento atualizar(@PathVariable Long id, @RequestBody Lancamento lancamentoAtualizado) {
 		return lancamentoService.atualizar(id, lancamentoAtualizado);
 	}
 
-	// ✅ Deletar lançamento por ID
+	// Deletar lançamento por ID
 	@DeleteMapping("/{id}")
 	public void deletar(@PathVariable Long id) {
 		lancamentoService.deletar(id);
